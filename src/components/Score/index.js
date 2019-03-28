@@ -1,23 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Score extends React.Component {
-  state = {
-    count: 0
-  };
-
-  handleIncrement = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
-
-  render() {
-    return (
-      <div>
-        <h3>
-          Current Score: <span>{this.state.count}</span>
-        </h3>
-      </div>
-    );
-  }
-}
+const Score = ({ score }) => {
+  return <h4>Score: {score}</h4>;
+};
 
 export default Score;

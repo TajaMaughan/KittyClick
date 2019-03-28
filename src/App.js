@@ -1,19 +1,20 @@
 import React, { Component } from "react";
 import CardContainer from "./components/CardContainer";
 import Header from "./components/Header";
+import "./style.css";
+// import Score from "./components/Score";
 
-class App extends Component {
-  //   state = {
-  //     cardList
-  //   };
+class App extends React.Component {
+  state = {
+    score: 0,
+    isClicked: false,
 
-  // clicked = id => {
-  //     const cardList = this.state.cardList.filter(cardList)
-  // }
+  };
+
   render() {
     return (
       <div>
-        <Header />
+        <Header score={this.state.score} />
         <CardContainer />
       </div>
     );
