@@ -1,24 +1,22 @@
 import React, { Component } from "react";
-import Card from "./components/Card";
-// import Score from "./components/Score";
-// import TopScore from "./components/TopScore";
-import cardList from "./cardList.json";
+import CardContainer from "./components/CardContainer";
+import Header from "./components/Header";
 
 class App extends Component {
-  state = {
-    cardList
-  };
+  //   state = {
+  //     cardList
+  //   };
 
   // clicked = id => {
   //     const cardList = this.state.cardList.filter(cardList)
   // }
   render() {
     return (
-    <div>
-      {cardList.map(card => (
-        <Card id={card.id} name={card.name} img={card.img} />
-      ))}
-    </div>
-  )}
+      <div>
+        <Header />
+        <CardContainer />
+      </div>
+    );
+  }
 }
 export default App;

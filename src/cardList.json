@@ -2,61 +2,73 @@
   {
     "id": 1,
     "name": "amonet1",
-    "img": "./imgs/amonet1.jpg"
+    "img": "./imgs/amonet1.jpg",
+    "isClicked": false
   },
   {
     "id": 2,
     "name": "amonet2",
-    "img": "./imgs/amonet2.jpg"
+    "img": "./imgs/amonet2.jpg",
+    "isClicked": false
   },
   {
     "id": 3,
     "name": "amonet3",
-    "img": "./imgs/amonet3.jpg"
+    "img": "./imgs/amonet3.jpg",
+    "isClicked": false
   },
   {
     "id": 4,
     "name": "amonet4",
-    "img": "./imgs/amonet4.jpg"
+    "img": "./imgs/amonet4.jpg",
+    "isClicked": false
   },
   {
     "id": 5,
     "name": "doctor1",
-    "img": "./imgs/doctor1.jpg"
+    "img": "./imgs/doctor1.jpg",
+    "isClicked": false
   },
   {
     "id": 6,
     "name": "doctor2",
-    "img": "./imgs/doctor2.jpg"
+    "img": "./imgs/doctor2.jpg",
+    "isClicked": false
   },
   {
     "id": 7,
     "name": "doctor3",
-    "img": "./imgs/doctor3.jpg"
+    "img": "./imgs/doctor3.jpg",
+    "isClicked": false
   },
   {
     "id": 8,
     "name": "doctor4",
-    "img": "./imgs/doctor4.jpg"
+    "img": "./imgs/doctor4.jpg",
+    "isClicked": false
   },
   {
     "id": 9,
     "name": "tealc1",
-    "img": "./imgs/tealc1.jpg"
+    "img": "./imgs/tealc1.jpg",
+    "isClicked": false
   },
   {
     "id": 10,
     "name": "tealc2",
-    "img": "./imgs/tealc2.jpg"
+    "img": "./imgs/tealc2.jpg",
+    "isClicked": false
   },
   {
     "id": 11,
     "name": "tealc3",
-    "img": "./imgs/tealc3.jpg"
+    "img": "./imgs/tealc3.jpg",
+    "isClicked": false
   },
   {
     "id": 12,
     "name": "tealc4",
-    "img": "./imgs/tealc4.jpg"
+    "img": "./imgs/tealc4.jpg",
+    "isClicked": false
   }
 ]
