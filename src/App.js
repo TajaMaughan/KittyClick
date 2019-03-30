@@ -13,26 +13,25 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      clickedArray: [],
       score: 0,
-      id: 0
+      id: 0,
+      isClicked: false
     };
   }
 
   handleClick = event => {
-    let clickedArray = this.state.clickedArray;
+    let isClicked = this.state.clickedArray;
     let score = this.state.score;
-    if (clickedArray) {
+    if (isClicked) {
       this.setState({
-        clickedArray: [],
+        isClicked: false,
         score: 0
       });
     } else {
       this.setState(
         state => {
-          const clickedArray = state.clickedArray.concat(this.key);
           return {
-            clickedArray,
+            isClicked: true,
             id: 0,
             score: ++score
           };
@@ -40,7 +39,7 @@ class App extends React.Component {
         () => {
           if (this.state.score === 12) {
             this.setState({
-              clickedArray: [],
+              isClicked: false,
               score: 0
             });
           }
@@ -63,6 +62,7 @@ class App extends React.Component {
                     id={randomTile.id}
                     img={randomTile.img}
                     name={randomTile.name}
+                    isClicked={this.state.isClicked}
                     handleClick={this.handleClick}
                   />
                 ))}
