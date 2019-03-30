@@ -8,21 +8,8 @@ import "./style.css"
 
 const CardContainer = () => {
   return (
-    <Container className="pt-2 pb-2">
-      <Row className="margin">
-        <Col>
-          {cardList
-            .sort((a, b) => 0.5 - Math.random())
-            .map(randomTile => (
-              <Tile
-                id={randomTile.id}
-                img={randomTile.img}
-                name={randomTile.name}
-              />
-            ))}
-        </Col>
-      </Row>
-      {/* <Row>
+
+      /* <Row>
         <Tile id={cardList[0]} name={cardList[0].name} img={cardList[0].img} />
         <Tile id={cardList[1]} name={cardList[1].name} img={cardList[1].img} />
         <Tile id={cardList[2]} name={cardList[2].name} img={cardList[2].img} />
@@ -39,11 +26,11 @@ const CardContainer = () => {
         <Tile id={cardList[9]} name={cardList[9].name} img={cardList[9].img} />
         <Tile id={cardList[10]} name={cardList[10].name} img={cardList[10].img} />
         <Tile id={cardList[11]} name={cardList[11].name} img={cardList[11].img} />
-      </Row> */}
-      {/* {cardList.map(Tile => (
+      </Row> */
+      /* {cardList.map(Tile => (
         <Tile id={card.id} name={card.name} img={card.img} />
-      ))} */}
-    </Container>
+      ))} */
+    
   );
 };
 
