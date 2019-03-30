@@ -10,36 +10,42 @@ import "./style.css";
 // import Score from "./components/Score";
 
 class App extends React.Component {
-  state = {
-    clickedArray: [],
-    score: 0,
-    id: 0
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      clickedArray: [],
+      score: 0,
+      id: 0
+    };
+  }
 
-  handleClick = tile => {
+  handleClick = event => {
     let clickedArray = this.state.clickedArray;
     let score = this.state.score;
-    if (clickedArray[tile.id]) {
+    if (clickedArray) {
       this.setState({
         clickedArray: [],
         score: 0
-      })
+      });
     } else {
-      this.setState(state => {
-        const clickedArray = state.clickedArray.concat(tile.id);
-        return {
-          clickedArray,
-          id: '',
-          score: ++score 
-        }       
-      }, () => {
-        if (this.state.score === 12) {
-          this.setState({
-            clickedArray: [],
-            score:0
-          })
+      this.setState(
+        state => {
+          const clickedArray = state.clickedArray.concat(this.key);
+          return {
+            clickedArray,
+            id: 0,
+            score: ++score
+          };
+        },
+        () => {
+          if (this.state.score === 12) {
+            this.setState({
+              clickedArray: [],
+              score: 0
+            });
+          }
         }
-      })
+      );
     }
   };
   render() {
@@ -53,6 +59,7 @@ class App extends React.Component {
                 .sort((a, b) => 0.5 - Math.random())
                 .map(randomTile => (
                   <Tile
+                    key={randomTile.id}
                     id={randomTile.id}
                     img={randomTile.img}
                     name={randomTile.name}
