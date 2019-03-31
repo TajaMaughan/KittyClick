@@ -1,0 +1,12 @@
+body {
+    color: #453457
+}
+
+.header {
+    background-color: #7b8b60;
+    border: ridge;
+    border-color:#893434;
+    border-width: 5px;
+    border-top-width: 0px;
+
+}

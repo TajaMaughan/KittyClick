@@ -2,15 +2,16 @@ import React from "react";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import Score from "../Score";
+import "./style.css"
 
 const Header = ({ score, message }) => {
   return (
       <Container>
-    <Jumbotron className="text-center pt-1 pb-1 mb-0">
-      <h2>Test your Memory!</h2>
-      <h6>Click on an image to start. Every time you click an image they will render in a different order. Make sure you don't click the same image twice or the score will reset. You win when your score equals 12</h6>
+    <Jumbotron className="text-center pt-1 pb-1 mb-0 header">
+      <h3>Test your Memory!</h3>
+      <h5>Try to click every image without clicking any a second time.</h5>
       <Score score={score} />
-      <h6>{message}</h6>
+      <h5>{message}</h5>
     </Jumbotron>
     </Container>
   );
